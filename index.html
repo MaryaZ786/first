@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Baby v1.0 Incoming!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #fff0f5, #e6f7ff);
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 3px dashed #ffc0cb;
+      border-radius: 25px;
+      padding: 40px;
+      max-width: 700px;
+      margin: 0 auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff6f61;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.4em;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #6a5acd;
+    }
+
+    .report-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #ffb6c1;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .report-button:hover {
+      background-color: #ff85a2;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+    }
+
+    .floating-object {
+      position: fixed;
+      font-size: 2em;
+      animation: float 10s linear infinite;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating emojis -->
+  <div class="floating-object" style="left: 10%; animation-delay: 0s;">🍼</div>
+  <div class="floating-object" style="left: 30%; animation-delay: 2s;">🧷</div>
+  <div class="floating-object" style="left: 50%; animation-delay: 4s;">👶</div>
+  <div class="floating-object" style="left: 70%; animation-delay: 1s;">🧸</div>
+  <div class="floating-object" style="left: 90%; animation-delay: 3s;">💖</div>
+
+  <!-- Main content card -->
+  <div class="card">
+    <h1>Relationship Update Alert!</h1>
+    <p>A new process is running: <span class="highlight">Baby v1.0</span></p>
+    <p>Training started: <span class="highlight">Now</span></p>
+    <p>Estimated delivery: <span class="highlight">February 2026</span></p>
+    <p>New role unlocked: <span class="highlight">DAD</span> 🧠💻❤️</p>
+
+    <!-- Pregnancy strip button -->
+    <a href="strip.jpg" class="report-button" target="_blank">View Strip 📸</a>
+    <br><br>
+
+    <!-- Blood report button -->
+    <a href="report.jpg" class="report-button" target="_blank">View Blood Report 📄</a>
+  </div>
+</body>
+</html>
